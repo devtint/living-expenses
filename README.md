@@ -1,4 +1,4 @@
-# currency-template-vue2
+# living-expenses
 
 ## vue2+vant2+pinia --mobileProject
 
