@@ -3,7 +3,9 @@
     <!-- 路由模式 -->
     <van-tabbar route>
       <van-tabbar-item replace to="/" icon="home-o">Home</van-tabbar-item>
-      <van-tabbar-item replace to="/orders" icon="orders-o">订单</van-tabbar-item>
+      <van-tabbar-item replace to="/orders" icon="orders-o"
+        >订单</van-tabbar-item
+      >
       <van-tabbar-item replace to="/my" icon="friends-o">我的</van-tabbar-item>
     </van-tabbar>
   </div>
@@ -21,11 +23,10 @@ export default {
   },
   computed: {},
   watch: {},
-  created() { },
-  mounted() { },
+  created() {},
+  mounted() {},
   methods: {},
 }
 </script>
 
-<style scoped lang="less">
-</style>
+<style scoped lang="less"></style>

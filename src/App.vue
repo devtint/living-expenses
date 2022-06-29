@@ -4,5 +4,7 @@
   </div>
 </template>
 
-<style lang="less">
+<style>
+@import url('../src/assets/iconfont/iconfont.css');
 </style>
+<style lang="less"></style>
