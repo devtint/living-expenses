@@ -20,7 +20,7 @@
           <!-- 圆角卡片 -->
           <div class="roundCard">
             <van-grid :column-num="3" :gutter="10" :border="false" clickable>
-              <van-grid-item>
+              <van-grid-item to="manage">
                 <template #icon>
                   <i class="iconfont icon-wuyejiaofei"></i>
                 </template>
@@ -28,13 +28,13 @@
                   <span class="grid-text">物业费</span>
                 </template>
               </van-grid-item>
-              <van-grid-item>
+              <van-grid-item to="sewage">
                 <template #icon>
                   <i class="iconfont icon-shui"></i>
                 </template>
                 <template #text><span class="grid-text">污水费</span></template>
               </van-grid-item>
-              <van-grid-item>
+              <van-grid-item to="shops">
                 <template #icon>
                   <i class="iconfont icon-shangpu"></i>
                 </template>

@@ -48,6 +48,21 @@ const routes = [
     name: 'rules',
     component: () => import('@/views/home/pages/orderRules.vue'),
   },
+  {
+    path: '/manage',
+    name: 'manage',
+    component: () => import('@/views/manage/manage.vue'),
+  },
+  {
+    path: '/sewage',
+    name: 'sewage',
+    component: () => import('@/views/sewage/sewage.vue'),
+  },
+  {
+    path: '/shops',
+    name: 'shops',
+    component: () => import('@/views/shops/shops.vue'),
+  },
 ]
 
 const router = new VueRouter({
