@@ -52,7 +52,7 @@
               :border="false"
               clickable
             >
-              <van-grid-item to="/help">
+              <van-grid-item to="/rules">
                 <template #icon>
                   <van-icon name="question-o" size="1.1rem" />
                 </template>
@@ -60,7 +60,7 @@
                   <span class="grid-text">帮助</span>
                 </template>
               </van-grid-item>
-              <van-grid-item to="/order">
+              <van-grid-item to="/orders">
                 <template #icon>
                   <van-icon name="balance-list-o" size="1.1rem" />
                 </template>

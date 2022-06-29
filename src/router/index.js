@@ -30,13 +30,23 @@ const routes = [
           // deepth: 1,
         },
       },
-      // {
-      //   path: '/my',
-      //   name: 'my',
-      //   component: () =>
-      //     import(/* webpackChunkName: "my" */ '@/views/my/my.vue'),
-      // },
     ],
+  },
+  {
+    path: '/my',
+    name: 'my',
+    component: () => import(/* webpackChunkName: "my" */ '@/views/my/my.vue'),
+  },
+  {
+    path: '/orders',
+    name: 'orders',
+    component: () =>
+      import(/* webpackChunkName: "orders" */ '@/views/orders/orders.vue'),
+  },
+  {
+    path: '/rules',
+    name: 'rules',
+    component: () => import('@/views/home/pages/orderRules.vue'),
   },
 ]
 
