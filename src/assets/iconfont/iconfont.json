@@ -6,6 +6,20 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "1380351",
+      "name": "yly_已认证",
+      "font_class": "yly_yirenzheng",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "26847668",
+      "name": "已认证",
+      "font_class": "yirenzheng",
+      "unicode": "e66b",
+      "unicode_decimal": 58987
+    },
+    {
       "icon_id": "4186773",
       "name": "商铺",
       "font_class": "shangpu",
