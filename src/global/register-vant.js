@@ -54,6 +54,8 @@ import {
   CountDown,
   PasswordInput,
   NumberKeyboard,
+  Cascader,
+  Area,
 } from 'vant'
 
 const components = [
@@ -111,6 +113,8 @@ const components = [
   CountDown,
   PasswordInput,
   NumberKeyboard,
+  Cascader,
+  Area,
 ]
 
 function install(Vue) {
