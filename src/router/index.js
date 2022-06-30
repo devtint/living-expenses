@@ -63,6 +63,16 @@ const routes = [
     name: 'shops',
     component: () => import('@/views/shops/shops.vue'),
   },
+  {
+    path: '/confirm',
+    name: 'confirm',
+    component: () => import('@/views/manage/components/confirm.vue'),
+  },
+  {
+    path: '/auth',
+    name: 'auth',
+    component: () => import('@/views/auth/auth.vue'),
+  },
 ]
 
 const router = new VueRouter({

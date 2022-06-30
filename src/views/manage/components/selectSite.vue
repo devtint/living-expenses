@@ -13,6 +13,7 @@
           <van-popup v-model="show" round position="bottom">
             <van-area
               title="请选择所在地区"
+              value="440106"
               :area-list="areaList"
               @confirm="areaConfirm"
             />
@@ -28,27 +29,42 @@
           finished-text="没有更多了"
           @load="onLoad"
         >
-          <van-cell v-for="item in list" :key="item" :title="item" />
+          <van-cell
+            v-for="item in list"
+            :key="item"
+            :title="item"
+            @click="selectSite(item)"
+          />
         </van-list>
       </van-pull-refresh>
     </main>
+    <select-expenses ref="expenses"></select-expenses>
   </div>
 </template>
 
 <script>
 import { areaList } from '@vant/area-data'
+
+import selectExpenses from './selectExpenses.vue'
 export default {
   name: 'selectSite',
-  components: {},
+  components: {
+    selectExpenses,
+  },
   props: {},
   data() {
     return {
       areaList,
       value: '',
-      areaValue: '请选择地区',
+      areaValue: '天河区',
       show: false,
 
-      list: [],
+      list: [
+        '广东省广州市天河区第1小区',
+        '广东省广州市天河区第2小区',
+        '广东省广州市天河区第3小区',
+        '广东省广州市天河区第4小区',
+      ],
       oldList: [],
       loading: false,
       finished: true,
@@ -68,12 +84,15 @@ export default {
       //
       this.listName = `${value[0].name}${value[1].name}${value[2].name}`
       this.oldList = [
-        `${this.listName}XX1小区`,
-        `${this.listName}XX2小区`,
-        `${this.listName}XX3小区`,
-        `${this.listName}XX4小区`,
+        `${this.listName}第1小区`,
+        `${this.listName}第2小区`,
+        `${this.listName}第3小区`,
+        `${this.listName}第4小区`,
       ]
       //
+      //获取当前地区的编号
+      this.areaCode = value[2].code
+      console.log('当前地区编号:', this.areaCode)
       console.log(this.areaValue)
       this.list = []
       this.show = false
@@ -104,6 +123,10 @@ export default {
       // 将 loading 设置为 true，表示处于加载状态
       this.loading = true
       this.onLoad()
+    },
+    selectSite(item) {
+      console.log(item)
+      this.$refs.expenses.showExpenses(item)
     },
   },
 }
