@@ -73,6 +73,11 @@ const routes = [
     name: 'auth',
     component: () => import('@/views/auth/auth.vue'),
   },
+  {
+    path: '/bind',
+    name: 'bind',
+    component: () => import('@/views/auth/components/bind.vue'),
+  },
 ]
 
 const router = new VueRouter({

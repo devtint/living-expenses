@@ -41,7 +41,7 @@
           size="large"
           icon="setting"
           is-link
-          to="orders"
+          to="bind"
         />
         <van-cell
           title="缴费记录"
