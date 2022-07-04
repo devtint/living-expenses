@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "commit": "cz"
+    "commit": "cz",
+    "deployment": "vue-cli-service build && rm -rf ~/tomcat7/webapps/livingExpenses/* && cp -rf ./dist/* ~/tomcat7/webapps/livingExpenses/ && echo '--部署完成-- [http://www.paytunnel.cn/livingExpenses]'"
   },
   "dependencies": {
     "@vant/area-data": "^1.3.1",
