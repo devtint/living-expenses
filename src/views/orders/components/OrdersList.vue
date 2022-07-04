@@ -58,6 +58,13 @@
                         >去支付</van-button
                       >
                       <van-button
+                        class="weChatPay"
+                        size="small"
+                        type="warning"
+                        @click="goPay(item)"
+                        >开发票</van-button
+                      >
+                      <van-button
                         class="cancelOrder"
                         size="small"
                         color="#a6a9ad"

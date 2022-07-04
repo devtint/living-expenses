@@ -20,7 +20,7 @@
       </div>
       <main>
         <van-radio-group v-model="radio">
-          <van-cell-group>
+          <van-cell-group inset :border="false">
             <van-cell
               v-for="(item, index) in list"
               :key="index"
@@ -101,6 +101,10 @@ export default {
 </script>
 
 <style scoped lang="less">
+main {
+  padding-top: 1rem;
+  background-color: #f7f8fa;
+}
 .title {
   font-size: 16px;
   color: #333;

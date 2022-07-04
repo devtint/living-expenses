@@ -68,7 +68,7 @@ export default {
     },
     submit() {
       this.$router.push({
-        path: '/pay',
+        path: '/over',
         query: {
           id: this.$route.query.id,
           name: this.$route.query.name,

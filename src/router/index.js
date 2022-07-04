@@ -66,7 +66,12 @@ const routes = [
   {
     path: '/confirm',
     name: 'confirm',
-    component: () => import('@/views/manage/components/confirm.vue'),
+    component: () => import('@/views/confirm/confirm.vue'),
+  },
+  {
+    path: '/over',
+    name: 'over',
+    component: () => import('@/views/confirm/over.vue'),
   },
   {
     path: '/auth',

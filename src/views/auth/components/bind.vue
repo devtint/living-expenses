@@ -130,10 +130,10 @@ export default {
 <style scoped lang="less">
 .top {
   padding: 0.5rem 0.5rem 5rem 0;
-  background: #5e98fe;
+  background: @main;
   color: #fff;
   .van-nav-bar {
-    background-color: #5e98fe;
+    background-color: @main;
     /deep/ .van-nav-bar__title {
       color: white;
     }
